@@ -94,3 +94,6 @@ print(electriccar)
 
 
 from lesson_5.folder.abstract import Person
+print("Hello World")
+print("Hello World")
+print("Hello World")
