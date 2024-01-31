@@ -28,7 +28,7 @@ class Car:
         new_wheels = self.wheels // other.wheels
         return Car(self.model, self.year, new_wheels)
     
-    def __truediv__(self, other):  # операция целочисленного деления (//)
+    def __truediv__(self, other):  # операция деления с остатком  (/)
         new_wheels = self.wheels / other.wheels
         return Car(self.model, self.year, new_wheels)
     

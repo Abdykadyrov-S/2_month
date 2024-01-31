@@ -14,7 +14,7 @@ class Transport: # Чертеж - Абстракитный класс
 
 class Car(Transport):
     def __init__(self, model, year, color, penalties = 2000):
-        Transport.__init__(self, model, year, color) # Первый сполсоб (Напрямую к классу)
+        Transport.__init__(self, model, year, color) # Первый способ (Напрямую к классу)
         # super().__init__(model, year, color) # Второй способ (с помощью метода super)
         self.penalties = penalties
 

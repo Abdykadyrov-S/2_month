@@ -30,6 +30,7 @@ def update_students_mark(conn, id, new_mark):
     cursor.execute(sql, (new_mark, id))
     conn.commit()
 
+
 # def dop_h_w(conn):
 #     sql = '''SELECT * FROM students WHERE mark > 3; '''
 #     cursor = conn.cursor()

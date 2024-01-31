@@ -78,6 +78,6 @@ class Bank:
                 print("Выберите действие:")
                 print("1-Регистрация, 2-Полнить баланс, 3-Вывести деньги, 4-Выйти")
 
-
-bank = Bank()
-bank.main()
+if __name__ == "__main__":
+    bank = Bank()
+    bank.main()

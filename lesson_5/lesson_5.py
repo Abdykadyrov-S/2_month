@@ -34,7 +34,11 @@
 
 # Кастомные модули : abstrct, calculator
 # Встроенные модули : random , math, datetime, time
+
 # from random import randint
+# import random
+
+# random.choice()
 
 # a = randint(1,10)
 # print(a)
@@ -42,7 +46,7 @@
 # import time
 
 # while True:
-#     time.sleep(6)
+#     time.sleep(2)
 #     print("loading...")
 
 # Внешние модули:
