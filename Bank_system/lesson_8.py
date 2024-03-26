@@ -30,8 +30,14 @@ class Bank:
         self.surname = surname
         self.age = age
         self.email = email
-        cursor.execute(f"""INSERT INTO clients (name, surname, age, email, balance, props, is_active)
+        cursor.execute("SELECT email FROM clients")
+        if cursor.fetchone() is None:
+            cursor.execute(f"""INSERT INTO clients (name, surname, age, email, balance, props, is_active)
                        VALUES ('{name}', '{surname}', '{age}', '{email}', 0, 7777777, True);""")
+        else:
+            print("Такая запись существует")
+        # cursor.execute(f"""INSERT INTO clients (name, surname, age, email, balance, props, is_active)
+        #                VALUES ('{name}', '{surname}', '{age}', '{email}', 0, 7777777, True);""")
         
         connect.commit()
 
